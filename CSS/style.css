@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+}
+
+.main {
+    background-color: hsl(216, 50%, 16%);
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 35rem;
+    border-radius: 10px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    gap: 1.3em;
+
+}
+
+.image {
+    position: relative;
+}
+
+
+.viewimg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    background: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+p:nth-of-type(1) {
+    color: hsl(215, 51%, 70%);
+}
+
+.text {
+    line-height: 1.5rem;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.value {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.bottom {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.credits {
+    color: hsl(215, 51%, 70%);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+}
+
+/*images*/
+.photo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100rem;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.nft {
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.icon {
+    padding-right: 6px;
+}
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*interactive*/
+
+h1:hover,
+.name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.viewimg:hover {
+    opacity: 1;
+    cursor: pointer;
+    background: hsl(178, 100%, 50%, 50%);
+    border-radius: 10px;
+}
+
+
+/*responsive*/
+
+@media(min-width:900px) {
+    .main {
+        height: 37rem;
+    }
+
+}
